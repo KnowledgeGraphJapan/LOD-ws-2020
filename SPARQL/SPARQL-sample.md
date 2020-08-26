@@ -53,3 +53,71 @@ LIMIT 100
 ```
 [クエリを実行](https://w.wiki/aMv)
 
+## 例2-1+）「位置する行政区（P131）」（述語）が「寝屋川市（Q389633）」（目的語）となる「主語（?s）」の一覧を取得する【名称あり】　　
+```
+select ?s ?label
+where{
+    ?s  <http://www.wikidata.org/prop/direct/P131> <http://www.wikidata.org/entity/Q389633> .
+    ?s <http://www.w3.org/2000/01/rdf-schema#label> ?label . 
+    FILTER(lang(?label)="ja")
+}
+LIMIT 100
+```
+[クエリを実行](https://w.wiki/aNP)
+
+
+## 例2-2）「分類（instance-of）（P31）」（述語）が「大学 （Q389633）」（目的語）となる「主語（?s）」+名称の一覧を取得する　　
+```
+select ?s ?label
+where{
+  ?s  <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q3918> .
+  ?s <http://www.w3.org/2000/01/rdf-schema#label> ?label . 
+  FILTER(lang(?label)="ja")
+} LIMIT 100
+
+```
+[クエリを実行](https://w.wiki/aNQ)
+
+## 例2-2+）「分類（instance-of）（P31）」（述語）が「大学 （Q389633）」（目的語）となる「主語（?s）」+名称（※あれば…）の一覧を取得する　　
+```
+select ?s ?label
+where{
+  ?s  <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q3918> .
+  OPTIONAL{
+    ?s <http://www.w3.org/2000/01/rdf-schema#label> ?label . 
+    FILTER(lang(?label)="ja")
+  }
+} LIMIT 100
+```
+[クエリを実行](https://w.wiki/aNS)
+
+# より複雑な検索例
+## 例3）集約（グループ化）とカウントを利用したランキング
+- 分類(P31)が大学(Q3918)となる主語(?s)と，その主語(?s)の国(P17)の目的語(?country)を取得する．
+- さらに，取得した結果を目的語(?country)が同一のもので集約(グループ化)し，
+- それぞれのグループに含まれる主語(?s)の数をカウントする．
+- その結果「国ごとの大学の数のランキング」を取得できる．　　
+```
+select ?country ?label  (count(?s) AS ?c) 
+where{
+    ?s <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q3918>  .
+    ?s <http://www.wikidata.org/prop/direct/P17> ?country .
+   OPTIONAL{
+     ?country <http://www.w3.org/2000/01/rdf-schema#label> ?label . 
+     FILTER(lang(?label)="ja")
+     }
+} GROUP BY ?country ?label
+ORDER BY DESC(?c) 
+```
+[クエリを実行](https://w.wiki/aNU)
+
+
+
+
+
+
+
+
+
+
+
