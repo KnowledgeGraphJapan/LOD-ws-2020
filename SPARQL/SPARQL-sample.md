@@ -17,3 +17,14 @@ where{
 ```
 [クエリを実行](https://w.wiki/aMs)
 
+# 検索例２：<主語>-<述語>を指定して<目的語>を取得する
+## 例2-1）「位置する行政区（P131）」（述語）が「寝屋川市（Q389633）」（目的語）となる「主語（?s）」の一覧を取得する　　
+```
+select ?s
+where{
+    ?s  <http://www.wikidata.org/prop/direct/P131> <http://www.wikidata.org/entity/Q389633> .
+}
+LIMIT 100
+```
+[クエリを実行](https://w.wiki/aMv)
+
