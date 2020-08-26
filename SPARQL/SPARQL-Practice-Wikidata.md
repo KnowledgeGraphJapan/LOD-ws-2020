@@ -4,7 +4,8 @@ https://query.wikidata.org/  　
 を使った，SPARQLクエリの演習問題．  
 
 解説スライド（動画リンクあり）は，こちら  
-https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/SPARQL/SPARQL-prac-wikidata-2020-0826.pdf
+https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/SPARQL/SPARQL-prac-wikidata-2020-0826.pdf  
+※解説動画のリンクをクリックするには，PDFファイルをダウンロードしてください．
 
 検索例を試した後，検索例のクエリの「一部を変更」して，いろんなクエリを作成してみる．
 
