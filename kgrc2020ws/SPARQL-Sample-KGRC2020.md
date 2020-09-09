@@ -3,7 +3,13 @@
 SPARQLクエリのサンプルです．  
 
 提供されているナレッジグラフの入手先は[こちら](https://challenge.knowledge-graph.jp/2020/rdf.html)，
-サンプルクエリの説明を含む資料は[こちら](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/KGRC-WS-ChallengIntro-KG-Schema_2020-0909.pdf)をご覧ください．
+サンプルクエリの説明を含む資料は[こちら](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/KGRC-WS-ChallengIntro-KG-Schema_2020-0909.pdf)をご覧ください．  
+  
+サンプルクエリを実行するには，
+- SPARQLエンドポイント  
+http://knowledge-graph.jp/sparql.html  
+  
+にクエリをコピー＆貼り付けして，実行してください．
 
 
 ## ｢まらだのひも」の場面36の全トリプル（述語・目的語）を取得する
@@ -16,6 +22,97 @@ WHERE {
   <http://kgc.knowledge-graph.jp/data/SpeckledBand/36> ?p ?o .
 }
 ```
-[クエリの実行](http://knowledge-graph.jp/sparql.html#query=PREFIX%20kgc%3A%20%3Chttp%3A%2F%2Fkgc.knowledge-graph.jp%2Fontology%2Fkgc.owl%23%3E%0A%0ASELECT%20DISTINCT%20*%0AFROM%20%3Chttp%3A%2F%2Fkgc.knowledge-graph.jp%2Fdata%2FSpeckledBand%3E%0AWHERE%20%7B%0A%20%20%3Chttp%3A%2F%2Fkgc.knowledge-graph.jp%2Fdata%2FSpeckledBand%2F36%3E%20%3Fp%20%3Fo%20.%0A%7D&endpoint=http%3A%2F%2Fkg.hozo.jp%2Ffuseki%2Fkgrc%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
 
-## 
+
+## ｢まらだのひも」の場面36のhasPredicate（その場面の内容を表す述語）を取得する
+```
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+
+SELECT DISTINCT *
+FROM <http://kgc.knowledge-graph.jp/data/SpeckledBand>
+WHERE {
+  <http://kgc.knowledge-graph.jp/data/SpeckledBand/36> kgc:hasPredicate ?o .
+}
+```
+
+## ｢まらだのひも」の場面36のsubject（その場面の主語）を取得する
+```
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+
+SELECT DISTINCT *
+FROM <http://kgc.knowledge-graph.jp/data/SpeckledBand>
+WHERE {
+  <http://kgc.knowledge-graph.jp/data/SpeckledBand/36> kgc:subject ?o .
+}
+```
+## ｢まらだのひも」で用いられているhasPredicate（その場面の内容を表す述語）の一覧を取得する
+```
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+
+SELECT DISTINCT ?o
+FROM <http://kgc.knowledge-graph.jp/data/SpeckledBand>
+WHERE {
+  ?s kgc:hasPredicate ?o .
+}
+```
+## ｢まらだのひも」のSituation（事実・状況の描写）の一覧を取得する
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+
+SELECT DISTINCT *
+FROM <http://kgc.knowledge-graph.jp/data/SpeckledBand>
+WHERE {
+  ?s rdf:type kgc:Situation .
+}
+```
+## ｢まらだのひも」の全場面の一覧を取得する
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+
+SELECT DISTINCT *
+FROM <http://kgc.knowledge-graph.jp/data/SpeckledBand>
+WHERE {
+  ?s rdf:type/rdfs:subClassOf kgc:Scene .
+  ?s rdf:type ?o .
+}
+```
+## ｢全小説」で述語がmeetの場面の一覧を取得する
+```
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+SELECT DISTINCT *
+FROM <http://kgc.knowledge-graph.jp/data/SpeckledBand>
+FROM <http://kgc.knowledge-graph.jp/data/DancingMen>
+FROM <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity>
+FROM <http://kgc.knowledge-graph.jp/data/DevilsFoot>
+FROM <http://kgc.knowledge-graph.jp/data/CrookedMan>
+WHERE {
+  ?s kgc:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/meet> .
+}
+```
+## ｢まらだのひも」で用いられているhasProperty（その場面の内容を表す状態）の一覧を取得する
+```
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+
+SELECT DISTINCT ?o
+FROM <http://kgc.knowledge-graph.jp/data/SpeckledBand>
+WHERE {
+  ?s kgc:hasProperty ?o .
+}
+```
+## ｢まらだのひも」で場面間のつながりの一覧を取得する
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+
+SELECT DISTINCT *
+FROM <http://kgc.knowledge-graph.jp/data/SpeckledBand>
+WHERE {
+  ?s rdf:type/rdfs:subClassOf kgc:Scene .
+  ?o rdf:type/rdfs:subClassOf kgc:Scene .
+  ?s ?p ?o .
+}
+```
