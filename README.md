@@ -12,5 +12,6 @@
 ## 「ナレッジグラフ推論チャレンジ2020技術勉強会」の資料
 [ナレッジグラフ推論チャレンジ2020技術勉強会](https://kgrc2020ws.peatix.com/)の資料を下記に公開予定です．
 
-
-
+### ナレッジグラフ推論チャレンジの紹介～開催概要・提供するナレッジグラフ～  
+[講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/KGRC-WS-ChallengIntro-KG-Schema_2020-0909.pdf)　　
+[SPARQLクエリのサンプル](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/SPARQL-Sample-KGRC2020.md)
