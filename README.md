@@ -15,3 +15,9 @@
 ### ナレッジグラフ推論チャレンジの紹介～開催概要・提供するナレッジグラフ～  
 [講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/KGRC-WS-ChallengIntro-KG-Schema_2020-0909.pdf)　　
 [SPARQLクエリのサンプル](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/SPARQL-Sample-KGRC2020.md)
+
+### チャレンジ応募に向けた参考アプローチの紹介
+[講演資料](https://www.slideshare.net/TakanoriUgai/2020-238446011)　　
+
+### 過去の受賞作品の紹介（ナレッジグラフの埋め込み手法）黒川　茂莉　氏（KDDI総合研究所）
+[講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/KGRC20200909-KDDI.pdf)　　
