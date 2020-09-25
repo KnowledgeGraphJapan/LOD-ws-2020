@@ -14,18 +14,18 @@
 
 ## 前半 [動画](https://www.dropbox.com/s/ibf23zrglk5p5c1/2020-0909-kgrc-ws-01.mp4?dl=0)
 
-### ナレッジグラフ推論チャレンジの紹介～開催概要・提供するナレッジグラフ～  
+### ■ ナレッジグラフ推論チャレンジの紹介～開催概要・提供するナレッジグラフ～  
 [講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/raw/master/kgrc2020ws/KGRC-WS-ChallengIntro-KG-Schema_2020-0909.pdf)　　
 [SPARQLクエリのサンプル](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/SPARQL-Sample-KGRC2020.md)
 
-### チャレンジ応募に向けた参考アプローチの紹介
+### ■ チャレンジ応募に向けた参考アプローチの紹介
 [講演資料](https://www.slideshare.net/TakanoriUgai/2020-238446011)　　
 
 ## 後半(過去の受賞作品の紹介)　[動画](https://www.dropbox.com/s/4esmqlwq5qih08l/2020-0909-kgrc-ws-02.mp4?dl=0)
 
-### ナレッジグラフの埋め込み手法:  黒川　茂莉　氏（KDDI総合研究所）
+### ■ ナレッジグラフの埋め込み手法:  黒川　茂莉　氏（KDDI総合研究所）
 [講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/raw/master/kgrc2020ws/KGRC20200909-KDDI.pdf)　　
 
-### BERT、述語論理等: 田村　光太郎　氏（NRIデジタル株式会社）
+### ■ BERT、述語論理等: 田村　光太郎　氏（NRIデジタル株式会社）
 [講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/raw/master/kgrc2020ws/NRI.pptx)　　
 
