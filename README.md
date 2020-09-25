@@ -21,3 +21,7 @@
 
 ### 過去の受賞作品の紹介（ナレッジグラフの埋め込み手法）黒川　茂莉　氏（KDDI総合研究所）
 [講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/raw/master/kgrc2020ws/KGRC20200909-KDDI.pdf)　　
+
+### 過去の受賞作品の紹介（BERT、述語論理等）田村　光太郎　氏（NRIデジタル株式会社）
+[講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/raw/master/kgrc2020ws/NRI.pptx)　　
+
