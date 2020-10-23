@@ -29,3 +29,12 @@
 ### ■ BERT、述語論理等: 田村　光太郎　氏（NRIデジタル株式会社）
 [講演資料](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/raw/master/kgrc2020ws/NRI.pptx)　　
 
+---
+# 「ナレッジグラフ推論チャレンジ Tech Live！」の資料
+[ナレッジグラフ推論チャレンジ Tech Live！](https://kgrc2020live.peatix.com/)の資料を下記で公開しています．
+
+## 前半（ナレッジグラフ推論チャレンジの紹介，ナレッジグラフ統合技術を用いた推論知識拡充のアプローチ）
+[動画](https://www.dropbox.com/s/soidp7qsp5npooo/2020-1021KCRC-TechLive_1.mp4?dl=0)
+
+## 後半（ナレッジグラフ統合技術を用いた推論知識拡充のアプローチ）
+[動画](https://www.dropbox.com/s/uc0i2wpymc74a5u/2020-1021KCRC-TechLive_2.mp4?dl=0)
