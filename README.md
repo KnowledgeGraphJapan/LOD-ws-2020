@@ -37,4 +37,5 @@
 [動画](https://www.dropbox.com/s/soidp7qsp5npooo/2020-1021KCRC-TechLive_1.mp4?dl=0)
 
 ## 後半（ナレッジグラフ統合技術を用いた推論知識拡充のアプローチ）
+[講演資料](https://www.slideshare.net/KnowledgeGraph/part-2tech-live-238950488)  
 [動画](https://www.dropbox.com/s/uc0i2wpymc74a5u/2020-1021KCRC-TechLive_2.mp4?dl=0)
