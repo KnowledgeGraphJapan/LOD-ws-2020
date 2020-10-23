@@ -34,6 +34,7 @@
 [ナレッジグラフ推論チャレンジ Tech Live！](https://kgrc2020live.peatix.com/)の資料を下記で公開しています．
 
 ## 前半（ナレッジグラフ推論チャレンジの紹介，ナレッジグラフ統合技術を用いた推論知識拡充のアプローチ）
+[講演資料](https://www.slideshare.net/KnowledgeGraph/part-1tech-live)  
 [動画](https://www.dropbox.com/s/soidp7qsp5npooo/2020-1021KCRC-TechLive_1.mp4?dl=0)
 
 ## 後半（ナレッジグラフ統合技術を用いた推論知識拡充のアプローチ）
