@@ -1,0 +1,2 @@
+<http://kgc.knowledge-graph.jp/data/predicate/die>	<http://kgc-example.org/actionKind>	<http://kgc-example.org/IncidentalAction>.
+<http://kgc.knowledge-graph.jp/data/predicate/escape>	<http://kgc-example.org/actionKind>	<http://kgc-example.org/SuspiciousAction>.
