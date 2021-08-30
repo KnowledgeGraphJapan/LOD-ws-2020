@@ -7,7 +7,7 @@ SPARQLクエリのサンプルです．
   
 サンプルクエリを実行するには，
 - SPARQLエンドポイント  
-http://knowledge-graph.jp/sparql.html  
+http://knowledge-graph.jp/sparql2020v2.html  
   
 にクエリをコピー＆貼り付けして，実行してください．
 
